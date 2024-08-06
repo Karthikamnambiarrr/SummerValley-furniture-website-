@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Valley Woods</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            font-family: "Merriweather", serif;
+        }
+    </style>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- favicon -->
+     <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_640.jpg">
+
+</head>
+<body>
+    <!-- navbar -->
+     <div style="position:sticky; top:0px; z-index: 1;">
+    <nav class="navbar p-2" style="background-color: rgb(60,76,36);">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white">Summer Valley Woods</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-white" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+     <div style="background-color:#BCECAC;" class="border pt-3">
+        <ul type="none" class="d-flex justify-content-around" style="color:rgb(60,76,36);">
+            <li><a style="color:rgb(60,76,36); text-decoration: none;" href="#carouselExampleAutoplaying">Home</a></li>
+            <li><a style="color:rgb(60,76,36);text-decoration: none;" href="#gallery">Gallery</li></a>
+            <li><a  href=""><div class="dropdown"></a>
+              <div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Product
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#bed">Bed & Mattresses</a></li>
+                <li><a class="dropdown-item" href="#furniture">Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Lamps</a></li>
+              </ul>
+            </div></li>
+            <li><a  style="color:rgb(60,76,36);text-decoration: none;" href="#customer">Customer Stories</li></a>
+            <li><a  style="color:rgb(60,76,36);text-decoration: none;" href="#contact">Contact Us</li></a>
+
+        </ul>
+     </div>
+    </div>
+
+     <!-- carousel -->
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./c1.jpg" class="d-block w-100" height="700px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg" class="d-block w-100"  height="700px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2024/04/21/01/27/ai-generated-8709663_640.png" class="d-block w-100" alt="..."  height="700px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- images -->
+       <div id="gallery" class="d-flex justify-content-evenly m-5 p-3">
+        <img width="200px" src="https://cdn.pixabay.com/photo/2017/03/28/12/13/chairs-2181968_640.jpg" class="img-thumbnail border" alt="..." style="border-color:rgb(60,76,36); background-color: #BCECAC;">
+        <img width="200px" src="./p-2.webp" class="img-thumbnail border" alt="..." style="border-color:rgb(60,76,36); background-color: #BCECAC;">
+        <img width="200px" src="./p-3.jpg" class="img-thumbnail border" alt="..." style="border-color:rgb(60,76,36); background-color: #BCECAC;">
+        <img width="200px" src="./c2.avif" class="img-thumbnail border" alt="..." style="border-color:rgb(60,76,36); background-color: #BCECAC;">
+        <img width="200px" src="./c1.jpg" class="img-thumbnail border" alt="..." style="border-color:rgb(60,76,36); background-color: #BCECAC;">
+       </div>
+
+       <div class="d-flex justify-content-evenly m-3 p-3">
+        <img width="200px" height="200px" src="./c-5.jpg" class="rounded-circle p-1" alt="..." style="background-color: #BCECAC;">
+        <img width="200px" height="200px" src="./c-1.webp" class="rounded-circle p-1" alt="..." style="background-color: #BCECAC;">
+        <img width="200px" height="200px" src="./c-2.jpg" class="rounded-circle p-1" alt="..." style="background-color: #BCECAC;">
+        <img width="200px" height="200px" src="./c-3.jpeg" class="rounded-circle p-1" alt="..." style="background-color: #BCECAC;">
+        <img width="200px" height="200px" src="./c-4.png" class="rounded-circle p-1" alt="..." style="background-color: #BCECAC;">
+        
+        
+       </div>
+
+       <!-- cards -->
+        <h2 id="bed" class="text-center" style="margin-top: 100px;">Beds & mattresses</h2>
+        <div class="d-flex justify-content-evenly m-5">
+            <div class="card" style="width: 18rem;  border:1px solid #c7e4bd;">
+                <div id="carouselExample" class="carousel slide p-2">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://www.ikea.com/in/en/images/products/tonstad-bed-frame-with-storage-off-white-leirsund__1320914_pe941440_s5.jpg?f=xxs" class="d-block w-100" height="300px" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./pr1.png" class="d-block w-100" height="300px" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <h5 class="card-title mt-3">TONSTAD</h5>
+                  <h3 class="card-title">Rs.55,990</h3>
+                  <p class="card-text m-1">Bed frame with storage, off-white/Leirsund, 180x200 cm (70 7/8x78 3/4).For keeping it simple and to upgrade.</p>
+                  <div class="d-flex justify-content-around m-3 mt-3">
+                  <a href="#" class="btn text-white " style="background-color:rgb(60,76,36); ">Buy Now</a>
+                  <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                 </div>
+                </div>
+
+                <div class="card " style="width: 18rem;">
+                    <div id="carouselExample1" class="carousel slide p-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://www.ikea.com/in/en/images/products/tufjord-upholstered-bed-frame-tallmyra-white-black-leirsund__1259499_pe926703_s5.jpg?f=xxs" class="d-block w-100" height="300px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Screenshot (93).png" class="d-block w-100" height="300px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <h5 class="card-title mt-3">TUFJORD</h5>
+                      <h3 class="card-title">Rs.53,990</h3>
+                      <p class="card-text m-1">Upholstered bed frame, Tallmyra white/black/Leirsund, 180x200 cm (70 7/8x78 3/4 ").Best way to upgrade your interior. </p>
+                      <div class="d-flex justify-content-around m-3">
+                      <a href="#" class="btn text-white" style="background-color:rgb(60,76,36); ">Buy Now</a>
+                      <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                     </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;  border:1px solid #c7e4bd;">
+                        <div id="carouselExample2" class="carousel slide p-2">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://www.ikea.com/in/en/images/products/hemnes-day-bed-w-3-drawers-2-mattresses-yellow-vannareid-extra-firm__1327300_pe944406_s5.jpg?f=xxs" class="d-block w-100" height="300px" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./pr3.png" class="d-block w-100" height="300px" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                          <h5 class="card-title mt-3">TONSTAD</h5>
+                          <h3 class="card-title">Rs.44,990</h3>
+                          <p class="card-text m-1">Bed frame with storage, off-white/Leirsund, 180x200 cm (70 7/8x78 3/4).Minimal interior styling and keeping it simple. </p>
+                          <div class="d-flex justify-content-around m-3">
+                          <a href="#" class="btn text-white" style="background-color:rgb(60,76,36); ">Buy Now</a>
+                          <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                         </div>
+                        </div>
+
+                        <div class="card " style="width: 18rem; border:1px solid #c7e4bd; ">
+                            <div id="carouselExample3" class="carousel slide p-2">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://www.ikea.com/in/en/images/products/tonstad-bed-frame-with-storage-off-white__1320914_pe941440_s5.jpg?f=xxs" class="d-block w-100" height="300px" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./pr4.png" class="d-block w-100" height="300px" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                              <h5 class="card-title mt-3">HEMNES</h5>
+                              <h3 class="card-title">Rs.48,970</h3>
+                              <p class="card-text m-1">Day-bed w 3 drawers/2 mattresses, yellow/Vannareid extra firm, 80x200 cm (31 1/2x78 3/4 ") </p>
+                              <div class="d-flex justify-content-around m-3">
+                              <a href="#" class="btn text-white" style="background-color:rgb(60,76,36); ">Buy Now</a>
+                              <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                             </div>
+                            </div>
+              </div>
+        </div>
+
+        
+        
+        <h2 id="furniture" class="text-center" style="margin-top: 100px;">Furnitures</h2>
+        <div class="d-flex justify-content-evenly m-5">
+            <div class="card" style="width: 18rem;  border:1px solid #c7e4bd;">
+                <div id="carouselExample4" class="carousel slide p-2">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://www.ikea.com/in/en/images/products/tonstad-tv-storage-combination-brown-stained-oak-veneer-clear-glass__1248732_pe923201_s5.jpg?f=xxs" class="d-block w-100" height="300px" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./f1.png" class="d-block w-100" height="300px" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <h5 class="card-title mt-3">TONSTAD</h5>
+                  <h3 class="card-title">Rs.1,24,950 </h3>
+                  <p class="card-text m-1">TV storage combination, brown stained oak veneer/clear glass, 342x47x201 cm (134 5/8x18 5/8x78 7/8) "</p>
+                  <div class="d-flex justify-content-around m-3 mt-3">
+                  <a href="#" class="btn text-white " style="background-color:rgb(60,76,36); ">Buy Now</a>
+                  <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                 </div>
+                </div>
+
+                <div class="card " style="width: 18rem;">
+                    <div id="carouselExample5" class="carousel slide p-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://www.ikea.com/in/en/images/products/aepplaryd-4-seat-sofa-with-chaise-longue-gunnared-light-blue__1356640_pe953418_s5.jpg?f=xl" class="d-block w-100" height="300px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./f-2.png" class="d-block w-100" height="300px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <h5 class="card-title mt-3">ÄPPLARYD</h5>
+                      <h3 class="card-title">Rs.1,07,990</h3>
+                      <p class="card-text m-1"> 4-seat sofa with chaise longue, Gunnared light blue.An eye-catcher that reflects your personality and style.</p>
+                      <div class="d-flex justify-content-around m-3">
+                      <a href="#" class="btn text-white" style="background-color:rgb(60,76,36); ">Buy Now</a>
+                      <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                     </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;  border:1px solid #c7e4bd;">
+                        <div id="carouselExample7" class="carousel slide p-2">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://www.ikea.com/in/en/images/products/pax-storklinta-wardrobe-combination-grey-beige-dark-brown-stained-oak-effect__1371517_pe959153_s5.jpg?f=xxs" height="300px" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./f-4.png" class="d-block w-100" height="300px" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                          <h5 class="card-title mt-3">TONSTAD</h5>
+                          <h3 class="card-title">Rs.44,990</h3>
+                          <p class="card-text m-1">Bed frame with storage, off-white/Leirsund, 180x200 cm (70 7/8x78 3/4).Basic solution to get you to upgrade.</p>
+                          <div class="d-flex justify-content-around m-3">
+                          <a href="#" class="btn text-white" style="background-color:rgb(60,76,36); ">Buy Now</a>
+                          <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                         </div>
+                        </div>
+
+                        <div class="card " style="width: 18rem; border:1px solid #c7e4bd; ">
+                            <div id="carouselExample6" class="carousel slide p-2">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://www.ikea.com/in/en/images/products/skytta-pax-walk-in-wardrobe-with-sliding-doors-black-auli-mirror-glass__1306312_pe939675_s5.jpg?f=xxs" class="d-block w-100" height="300px" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./f-3.png" class="d-block w-100" height="300px" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                              <h5 class="card-title mt-3">SKYTTA/PAX</h5>
+                              <h3 class="card-title">Rs.1,04,600</h3>
+                              <p class="card-text m-1">Walk-in wardrobe with sliding doors, black/Auli mirror glass, 276x160x240 cm (108 5/8x63x94 1/2 ")</p>
+                              <div class="d-flex justify-content-around m-3">
+                              <a href="#" class="btn text-white" style="background-color:rgb(60,76,36); ">Buy Now</a>
+                              <a href="#" class="btn text-white" style="background-color:rgb(60,76,36)">Add Cart</a>
+                             </div>
+                            </div>
+              </div>
+        </div>
+    
+    
+        <!-- customerstories -->
+         <div id="customer" style="margin-top: 100px;">
+            <h1 class="text-center mt-5">Customer Stories</h1>
+         <div class="d-flex justify-content-center">
+            <div class="card m-5" style="width: 18rem;">
+                <img class="p-1 m-2 border rounded-circle" src="./u1.jpeg" alt="" height="90px" width="90px">
+                <h6>SHARAN HAREESH</h6>
+                <img src="./c-1.webp" class="card-img-top p-2" alt="..." height="300px">
+                <div class="card-body">
+                  
+                  <p class="card-text p-3" style="text-align: justify;"><i>#SV Story Thank you Summer Valley, The elite coffee table added glamour to my living room.A perfect hunt after viewing several other sites. Everything about your service is worth a FIVE STAR rating.The product appearance n quality,its value for money, prompt delivery and a very good installation team are worth mentioning...
+                  <a href="#">more</a></i></p>
+                </div>
+              </div>
+              <div class="card m-5" style="width: 18rem;">
+                <img class="p-1 m-2 border rounded-circle" src="./u-2.png" alt="" height="90px" width="90px">
+                <h6>DEVIKA VASUDEV</h6>
+                <img src="https://www.ikea.com/in/en/images/products/malm-bed-frame-high-w-4-storage-boxes-blue-leirsund__1334779_pe946892_s5.jpg?f=xxs" class="card-img-top p-2" alt="...">
+                <div class="card-body">
+                  
+                  <p class="card-text p-3" style="text-align: justify;"><i>Some pretty pretty Christmas-snuggling in from Urban Ladder, also loving the Accent Chair and Side Table which is the icining om the cake :).We'd really rather be in bed this Monday morning. How about you?
+                  <a href="#">more</a></i></p>
+                </div>
+              </div>
+              <div class="card m-5" style="width: 18rem;">
+                <img class="p-1 m-2 border rounded-circle" src="./u-2.png" alt="" height="90px" width="90px">
+                <h6>APARNA MURALI</h6>
+                <img src="https://www.ikea.com/in/en/images/products/ektorp-3-seat-sofa-with-chaise-longue-kilanda-dark-blue__1194860_pe902110_s5.jpg?f=xxs" class="card-img-top p-2" alt="...">
+                <div class="card-body">
+                  
+                  <p class="card-text p-3" style="text-align: justify;"><i>"My son's favorite spot in our home is this sofa. He sits there with a book every afternoon and gets lost in the stories of Marvel! The Apollo sectional sofa has been one of our most favorite purchases from @urbanladder . Big thanks to you guys in building our small abode." - #SVStory
+                  <a href="#">more</a></i></p>
+                </div>
+              </div>
+         </div>
+        </div>
+        <!-- contactus -->
+        <h2 id="contact" class="text-center mt-5">Contact Us</h2>
+        <div class="container d-flex justify-content-center mt-4 mb-5">
+          <div style="box-shadow: 3px 3px 3px black; margin: 10px;">
+            <img src="https://www.ikea.com/in/en/images/products/gradvis-plant-pot-in-outdoor-lilac__1281923_pe932028_s5.jpg?f=xxs" alt="" width="300px" height="200px">
+          </div>
+          <div>
+            <div class="form-floating mb-3 m-3" style="width:500px ; box-shadow: 3px 3px 3px black;">
+              <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+              <label for="floatingInputDisabled">Email address</label>
+            </div>
+            <div class="form-floating  m-3 mb-3" style="box-shadow: 3px 3px 3px black;">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></textarea>
+              <label for="floatingTextareaDisabled">Comments</label>
+            </div>
+          </div>
+        </div>
+
+      <!-- footer -->
+       <div class="d-flex justify-content-center text-white" style="background-color:rgb(60,76,36) ;">
+        <div class="m-5">
+          <h4>Company:</h4>
+            <p class="pt-2">About Us</p>
+            <p> Help</p>
+            <p> Blog</p>
+            <p>Inside UL</p>
+        </div>
+        <div class="m-1" style="padding-top: 90px;">
+            <p>Careers</p>
+            <p>  Press</p>
+            <p>Team</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="m-5" style="padding-left: 50px;">
+          <h4>More Information:</h4>
+          <p class="pt-2">Fees and Payment</p>                                                  
+          <p>Shipping & Delivery</p>
+          <p>Terms and Conditions</p>
+          <p>Warranty, Return and Refund</p>
+        </div>
+          <div class="m-1" style="padding-top: 90px;">
+          <p>Contact Us</p>
+          <p>Visit Us</p>
+           <p>Buy In Bulk</p>
+        </div>
+        <div class="m-5" style="padding-left: 80px; width:250px";>
+          <h4>Explore More</h4>
+            <p class="pt-2">Refer & Earn</p>
+            <p>Gift Cards</p>
+          </div>
+          <div class="m-5" style="padding-left: 80px;">
+            <h4>Address</h4>
+            <p class="pt-2">Reliance Retail Limited,<br>
+            3rd Floor, Court House, Lokmanya Tilak Marg,<br> Dhobi Talao, Mumbai- 400 002, Maharashtra,<br> India <br><br>
+            CIN: U01100MH1999PLC120563</p></div>
+       </div>
+
+
+</html>
